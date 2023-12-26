@@ -1,0 +1,56 @@
+.box {
+	height: 100%;
+	background-color: #eeeeee;
+}
+
+.box .box-div1 {
+	padding-top: 10px;
+}
+
+.box .box-div2 {
+	padding-bottom: 20px;
+}
+
+.show {
+	margin-top: 60px;
+}
+
+.show div {
+	border: 1px solid #dfe1df;
+	margin: 3px 3px;
+
+}
+
+.show p {
+	text-align: center;
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.pagination li {
+	margin: 0;
+	padding: 0;
+
+}
+
+.pagination button {
+	margin: 0;
+	padding: 10px 15px;
+	border-radius: 0;
+	background-color: #ffffff;
+	color: black;
+	border: 1px solid #dfe1df;
+}
+
+.pagination .current-page {
+	font-weight: bold;
+}
+

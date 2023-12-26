@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<style>
+			.mod1 {
+				background-color: rgba(0, 0, 0, 0.2);
+				height: 35px;
+				line-height: 35px;
+				color: #ffffff;
+				font-size: 24px;
+				font-weight: 400px;
+			}
+
+
+
+			.sidebar ul {
+				border: 2px solid #e9e9e7;
+				background-color: #ffffff;
+			}
+
+			.sidebar ul li {
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+
+			.sidebar ul li a {
+				text-decoration: none;
+				color: inherit;
+			}
+
+
+
+			.container-box {
+				display: flex;
+			}
+
+			.triangle {
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 20px 0 20px 35px;
+				border-color: transparent transparent transparent #2972d8;
+			}
+
+			.rectangle {
+				width: 160px;
+				height: 40px;
+				background-color: #2972d8;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			}
+
+
+
+			.bgcorol {
+				width: 200px;
+				height: 50px;
+				color: #959696;
+				font-size: 12px;
+			}
+
+			.box-botton {
+				border-bottom: 2px solid #efefef;
+			}
+
+			@keyframes jump {
+				0% {
+					transform: scaleX(1);
+				}
+
+				50% {
+					transform: scaleX(1.2);
+				}
+
+				100% {
+					transform: scaleX(1);
+				}
+			}
+
+			.bgcorol a {
+				display: inline-block;
+				font-size: 12px;
+				text-decoration: none;
+				color: #000;
+				padding: 10px 20px;
+				/* border: 1px solid #000; */
+				transition: all 0.3s;
+			}
+
+			.bgcorol a:hover {
+				animation: jump 0.5s;
+			}
+
+			.bg {
+				background-color: #ffffff;
+			}
+
+			.nav-a {
+				color: #2972d8;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<header class="head">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<p class="text-start">天虹集团有限公司</p>
+					</div>
+					<div class="col-6">
+						<p class="text-end"><i class="fas fa-phone"></i>联系电话：123-456-7890</p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="container">
+				<a class="navbar-brand title-style" href="#">天虹科技</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- 搜索框 -->
+				<form class="d-flex">
+					<input class="form-control me-2 input" type="search" placeholder="搜索一下" aria-label="Search">
+					<button class="btn" type="submit">搜索</button>
+				</form>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link nav-a" href="index.html">网站首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="briefInterdution.html">关于天虹</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="product.html">产品介绍</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="news.html">新闻中心</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 轮播图 -->
+		<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/banner1.jpg" class="d-block w-100" alt="轮播图1">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/banner2.jpg" class="d-block w-100" alt="轮播图2">
+				</div>
+				<div class="carousel-item">
+					<img src="./img/banner3.jpg" class="d-block w-100" alt="轮播图3">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!-- 主要内容 -->
+		<div class="container mt-4" id="bh-page">
+			<div class="row">
+				<!-- 产品展示 -->
+				<div class="col-xs-12 col-lg-3 col-md-4 col-sm-12 sidebar">
+				    <div class="mod1"><i class="fas fa-list-ul"></i>产品分类
+					 <span style="color: blue; float: right;">更多&gt;</span>
+					 </div>
+				    <ul>
+				        <li class="box-botton">
+				            <div class="container-box">
+				                <div class="rectangle"><i class="fas fa-desktop">游戏本电脑</i></div>
+				                <div class="triangle"></div>
+				            </div>
+				            <div class="container-box">
+				                <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+				            </div>
+							<div class="container-box">
+							     <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+							</div>
+				        </li>
+				        
+				        <li class="box-botton">
+				            <div class="container-box">
+				                <div class="rectangle"><i class="fas fa-laptop">笔记本</i></div>
+				                <div class="triangle"></div>
+				            </div>
+				            <div class="container-box">
+				                 <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+				            </div>
+							<div class="container-box">
+							     <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+							</div>
+				        </li>
+				        
+				        <li class="box-botton">
+				            <div class="container-box">
+				                <div class="rectangle"><i class="fas fa-mobile-alt">手机</i></div>
+				                <div class="triangle"></div>
+				            </div>
+				            <div class="container-box">
+				                <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+				            </div>
+							<div class="container-box">
+							    <div class="bgcorol"><a href="product-detail.html">英特尔全新游戏本</a></div>
+							</div>
+				        </li>
+				        
+				        <li class="box-botton">
+				            <div class="container-box">
+				                <div class="rectangle"><i class="fas fa-keyboard">电脑配件</i></div>
+				                <div class="triangle"></div>
+				            </div>
+				            <div class="container-box">
+				                <div class="bgcorol" style="border-bottom: none;"><a href="product-detail.html">电池</a></div>
+				            </div>
+				            <div class="container-box">
+				                <div class="bgcorol"><a href="product-detail.html">屏幕</a></div>
+				            </div>
+				        </li>
+				        
+				        <!-- 可以继续添加其他分类 -->
+				        
+				    </ul>
+				</div>
+
+
+				<div class="col-xs-12 col-lg-9 col-md-8 col-sm-12">
+					<!-- 模块二 -->
+					<div class="container">
+						<div class="row">
+							<!-- 公司简介 -->
+							<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+								<div class="container my-2">
+									<div class="row bg">
+										<div class="mod1">公司简介</div>
+										<div class="col-lg-6 col-md-6">
+											<img src="./img/tianhong.png" alt=""
+												style="width: 100%;height: 250px;padding: 10px;">
+										</div>
+										<div class="col-lg-6 col-md-6">
+											<h3 class="my-2">天虹集团有限公司</h3>
+											<p>天虹集团创立于2002年，成立至今一直致力于半导体及相关科技产业的专业服务。我们已通过全球
+												各大晶圆代工制造厂和存储器晶圆制造厂的验证，并且是一家与客户建立长期合作关系的优秀供应商。一直致力于半导体及相关科技产业的专业服务。
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 联系我们 -->
+							<div class="col-xs-12 col-lg-4 col-md-12 col-sm-12 my-2 col-xs-12">
+								<div class="bg">
+									<div class="mod1">联系我们</div>
+									<img src="./img/contact.png" alt=""
+										style="width: 100%;height: 100px;padding: 10px;">
+									<div class="text">
+										<p>地址：XX街道XX号</p>
+										<p>电话：1234567890</p>
+										<p>邮箱：info@example.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 商品展览 -->
+					<div class="mod1">商品展览</div>
+					<div class="container">
+						<div class="row bg">
+							<div class="col-lg-3 col-md-6 col-sm-6  mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 mb-4 my-3">
+								<a href="product-detail.html">
+								<img src="./img/product1.png" alt="Product 1" class="w-100 mb-2">
+								<p class="text-center">M10 PLUS网课平板</p>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+		</div>
+
+		<hr>
+		<div class="text-center icon"><a href="#bh-page"><svg t="1700746375252" class="icon" viewBox="0 0 1024 1024"
+					version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4397" width="200" height="200">
+					<path
+						d="M854.016 739.328l-313.344-309.248-313.344 309.248q-14.336 14.336-32.768 21.504t-37.376 7.168-36.864-7.168-32.256-21.504q-29.696-28.672-29.696-68.608t29.696-68.608l376.832-373.76q14.336-14.336 34.304-22.528t40.448-9.216 39.424 5.12 31.232 20.48l382.976 379.904q28.672 28.672 28.672 68.608t-28.672 68.608q-14.336 14.336-32.768 21.504t-37.376 7.168-36.864-7.168-32.256-21.504z"
+						p-id="4398" fill="#2972d8"></path>
+				</svg></a></div>
+
+		<!-- 官网页脚 -->
+		<footer class="bg-dark text-light py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 text-center">
+						<h5>天虹集团有限公司</h5>
+						<p>地址：广东省深圳市龙翔大道108号</p>
+						<p>电话：1234567890</p>
+						<p>邮箱：wangzhihua@example.com</p>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<p>关于我们</p>
+						<p>产品介绍</p>
+						<p>新闻中心</p>
+						<p>联系我们</p>
+					</div>
+					<div class="col-lg-4 col-md-4 text-center">
+						<h5>关注我们</h5>
+						<div class="social-icons">
+							<a href="#" target="_blank" class="me-2"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" target="_blank" class="me-2"><i class="fab fa-twitter"></i></a>
+							<a href="#" target="_blank" class="me-2"><i class="fab fa-instagram"></i></a>
+						</div>
+						<div><img src="./img/footer.png" alt=""></div>
+						<div>热线:010010100</div>
+					</div>
+				</div>
+				<hr class="my-4">
+				<p class="text-center">版权所有 &copy; 2023 企业官网</p>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+</html>

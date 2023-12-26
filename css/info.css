@@ -1,0 +1,40 @@
+body {
+	background-color: #ffffff;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+.d-mod1 {
+	margin: 100px 0;
+}
+
+.d-mod1 h2 {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.d-mod1 .d-time1 {
+	text-align: center;
+}
+
+.d-mod1 p {
+	line-height: 25px;
+	padding-top: 20px;
+}
+
+.d-xiayiyue {
+	margin-top: 30px;
+}
+
+.w {
+	width: 800px;
+	margin: 0 auto;
+}
+
+img {
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
